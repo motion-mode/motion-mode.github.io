@@ -1,3 +1,3 @@
-# motion-mode.github.io
+# Computational Long Exposure Mobile Photography
 
-Testing motion-mode project github.io webpage.
+The project page for this paper is under construction. Content is coming soon.
