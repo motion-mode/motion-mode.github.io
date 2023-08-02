@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Motion-mode captures, processes and outputs long exposure photographs automatically, at the tap of the camera shutter button.">
+  <meta name="keywords" content="Motion-mode">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Computational Long Exposure Mobile Photography</title>
+
+  <!-- TODO: Update -->
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/bulma.min.css">
+  <link rel="stylesheet" href="./css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="icon" href="./icons/favicon.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./js/fontawesome.all.min.js"></script>
+  <script src="./js/bulma-carousel.min.js"></script>
+  <script src="./js/bulma-slider.min.js"></script>
+  <script src="./js/index.js"></script>
+</head>
+<body>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Computational Long Exposure Mobile Photography</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="http://www.tabellion.org/et" target="_blank">Eric Tabellion</a>,
+            </span>
+            <span class="author-block">
+              Nikhil Karnad,
+            </span>
+            <span class="author-block">
+              Noa Glaser,
+            </span>
+            <span class="author-block">
+              Ben Weiss,
+            </span>
+            <span class="author-block">
+              David E. Jacobs,
+            </span>
+            <span class="author-block">
+              Yael Pritch
+            </span>
+          </div>
+
+          <div class="is-size-4 publication-authors">
+            <span class="author-block">Google Research</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="https://doi.org/10.1145/3592124"
+                   class="external-link button is-normal is-rounded is-dark"
+                   target="_blank">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>ACM DL</span>
+                </a>
+              </span>
+              <!-- TODO: Update -->
+              <span class="link-block">
+                <a href="https://arxiv.org/"
+                   class="external-link button is-normal is-rounded is-dark"
+                   target="_blank">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://github.com/motion-mode/motion-mode.github.io/images/long_exposure_supplement.zip"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Supplement</span>
+                </a>
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- TODO: Update -->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div id="results-carousel" class="carousel results-carousel">
+      <div class="item-landscape item-river">
+        <img src="./images/river_XXXX_20210602_004124_136_mblur.jpg"  
+             onmouseover="this.src='./images/river_XXXX_20210602_004124_136_hdrplus.jpg'" 
+             onmouseout="this.src='./images/river_XXXX_20210602_004124_136_mblur.jpg'">
+      </div>
+      <div class="item item-ferris-wheel">
+        <img src="./images/ferris_wheel_XXXX_20210806_015435_081_mblur.jpg"  
+             onmouseover="this.src='./images/ferris_wheel_XXXX_20210806_015435_081_hdrplus.jpg'" 
+             onmouseout="this.src='./images/ferris_wheel_XXXX_20210806_015435_081_mblur.jpg'">
+      </div>
+      <div class="item-landscape item-waterfall">
+        <img src="./images/waterfall_XXXX_20191230_115605_379_mblur.jpg"  
+             onmouseover="this.src='./images/waterfall_XXXX_20191230_115605_379_hdrplus.jpg'" 
+             onmouseout="this.src='./images/waterfall_XXXX_20191230_115605_379_mblur.jpg'">
+      </div>
+      <div class="item-landscape item-vespino">
+        <img src="./images/vespino_XXXX_20220628_091751_062_mblur.jpg"  
+             onmouseover="this.src='./images/vespino_XXXX_20220628_091751_062_hdrplus.jpg'" 
+             onmouseout="this.src='./images/vespino_XXXX_20220628_091751_062_mblur.jpg'">
+      </div>
+      <div class="item item-slide">
+        <img src="./images/slide_XXXX_20211012_202433_371_mblur.jpg"  
+             onmouseover="this.src='./images/slide_XXXX_20211012_202433_371_hdrplus.jpg'" 
+             onmouseout="this.src='./images/slide_XXXX_20211012_202433_371_mblur.jpg'">
+      </div>
+      <div class="item-landscape item-dog">
+        <img src="./images/dog_XXXX_20210724_011726_998_mblur.jpg"  
+             onmouseover="this.src='./images/dog_XXXX_20210724_011726_998_hdrplus.jpg'" 
+             onmouseout="this.src='./images/dog_XXXX_20210724_011726_998_mblur.jpg'">
+      </div>
+    </div>
+
+    <h2 class="subtitle has-text-centered">
+      "Motion Mode" captures, processes and outputs long exposure photographs automatically, at the tap of the camera shutter button.
+    </h2>
+  </div>
+</section>
+
+
+<!-- TODO: Update -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Long exposure photography produces stunning imagery, representing moving elements in a
+            scene with motion-blur. It is generally employed in two modalities, producing either a
+            foreground or a background blur effect. Foreground blur images are traditionally captured
+            on a tripod-mounted camera and portray blurred moving foreground elements, such as silky
+            water or light trails, over a perfectly sharp background landscape. Background blur images,
+            also called panning photography, are captured while the camera is tracking a moving subject,
+            to produce an image of a sharp subject over a background blurred by relative motion.
+          </p>
+          <p>
+            Both techniques are notoriously challenging and require additional equipment and advanced
+            skills. In this paper, we describe a computational burst photography system that operates
+            in a hand-held smartphone camera app, and achieves these effects fully automatically, at
+            the tap of the shutter button.
+          </p>
+          <p>
+            Our approach first detects and segments the salient subject.
+            We track the scene motion over multiple frames and align the images in order to preserve
+            desired sharpness and to produce aesthetically pleasing motion streaks. We capture an
+            under-exposed burst and select the subset of input frames that will produce blur trails
+            of controlled length, regardless of scene or camera motion velocity. We predict
+            inter-frame motion and synthesize motion-blur to fill the temporal gaps between the input
+            frames. Finally, we composite the blurred image with the sharp regular exposure to
+            protect the sharpness of faces or areas of the scene that are barely moving, and produce
+            a final high resolution and high dynamic range (HDR) photograph. Our system democratizes
+            a capability previously reserved to professionals, and makes this creative style
+            accessible to most casual photographers.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+  </div>
+</section>
+
+
+<!-- TODO: Update -->
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{tabellion2023,
+  author = {Tabellion, Eric and Karnad, Nikhil and Glaser, Noa and Weiss, Ben and Jacobs, David E. and Pritch, Yael},
+  title = {Computational Long Exposure Mobile Photography},
+  year = {2023},
+  issue_date = {August 2023},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  volume = {42},
+  number = {4},
+  issn = {0730-0301},
+  url = {https://doi.org/10.1145/3592124},
+  doi = {10.1145/3592124},
+  journal = {ACM Trans. Graph.},
+  month = {jul},
+  articleno = {48},
+  numpages = {15},
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div align="center" class="container">
+    <div class="columns is-centered">
+        <div class="content">
+            This website is borrowed from <a href="https://github.com/nerfies/nerfies.github.io" target="_blank">nerfies</a>.
+        </div>
+      </div>
+    </div>
+</footer>
+
+</body>
+</html>
