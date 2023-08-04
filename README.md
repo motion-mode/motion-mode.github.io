@@ -1,3 +1,3 @@
 # Computational Long Exposure Mobile Photography
 
-The project page for this paper is under construction. Content is coming soon.
+This is the project page source for this paper. Additional content is coming soon...
